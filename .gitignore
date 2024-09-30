@@ -1,0 +1,152 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/.dist
+
+/.parcel-cache
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+#  ../../../.VirtualBox/
+#  ../../../.android/
+#  ../../../.cache/
+#  ../../../.cargo/
+#  ../../../.config/
+#  ../../../.emulator_console_auth_token
+#  ../../../.gitconfig
+#  ../../../.gradle/
+#  ../../../.idea/
+#  ../../../.idlerc/
+#  ../../../.ipython/
+#  ../../../.javacpp/
+#  ../../../.lesshst
+#  ../../../.m2/
+#  ../../../.matplotlib/
+#  ../../../.node_repl_history
+#  ../../../.nuget/
+#  ../../../.packettracer
+#  ../../../.platformio/
+#  ../../../.rustup/
+#  ../../../.viminfo
+#  ../../../.vscode-R/
+#  ../../../.vscode/
+#  ../../../AppData/
+#  ../../../Cisco Packet Tracer 8.2.1/
+#  ../../../Contacts/
+#  ../../../Django-projects/
+#  ../../../Documents/
+#  ../../../Downloads/
+#  ../../../Favorites/
+#  ../../../Gowtham.sql
+#  ../../../Gowtham1.sql
+#  ../../../IntelGraphicsProfiles/
+#  ../../../Links/
+#  ../../../MyPortfolio.zip
+#  ../../../MyPortfolio/
+#  ../../../NTUSER.DAT
+#  ../../../NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+#  ../../../NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+#  ../../../NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+#  ../../../Node-1/
+#  ../../.849C9593-D756-4E56-8D6E-42412F2A707B
+#  ../21131A05D2 RPA.docx
+#  ../21131A05D2 RPA_final.docx
+#  ../21131A05D2 RPA_final.pdf
+#  ../21131a05d2-record(1).pdf
+#  ../21131a05d2-record.docx
+#  ../21131a05d2-record.pdf
+#  ../BCT/
+#  ../Backend-1/
+#  ../Backend-2/
+#  ../Bankist/
+#  ../Cisco Packet Tracer.lnk
+#  ../GDD/
+#  ../GOWTHAM KISHORE GEDELA - RESUME.docx
+#  ../GOWTHAM KISHORE GEDELA - RESUME.pdf
+#  ../GoToKart/
+#  ../Gowtham_21131a05d2_nsc_lab.docx
+#  ../Gowtham_21131a05d2_nsc_lab.pdf
+#  ../Mern_Chat_App/
+#  ../Module-2/
+#  ../MongoDBCompass.lnk
+#  ../Music/
+#  ../MusicPlayer/
+#  ../Music_Project/
+#  ../MyPortfolio.zip
+#  ../MyPortfolio/
+#  ../MyTruffleProject/
+#  ../Node-1/
+#  ../Node-2/
+#  ../Opera Browser.lnk
+#  ../Our_Chat/
+#  ../Postman.lnk
+#  ../Problem Solving/
+#  ../SIH.docx
+#  ../Tailwind/
+#  ../Tech_puzzle_unscramble/
+#  ../Telegram.lnk
+#  ../UiPath Assistant.lnk
+#  ../UiPath Studio.lnk
+#  ../Visual Studio Code.lnk
+#  ../WPS Office.lnk
+#  ../WPS PDF.lnk
+#  ../chrome1.exe - Shortcut (2).lnk
+#  ../chrome1.exe - Shortcut.lnk
+#  ../code_forces/
+#  ../college-web tech/
+#  ../desktop.ini
+#  ../favicon.ico
+#  ../git/
+#  ../iBOMMA/
+#  ../internal.xml
+#  ../javaScript/
+#  ../linux/
+#  ../movers/
+#  ../my-app/
+#  ../project_gayatri/
+#  ../python/
+#  ../../Documents/
+#  ../../Getting started with OneDrive.pdf
+#  ../../OneDrive - Personal - Shortcut.lnk
+#  ../../Personal Vault.lnk
+#  ../../Pictures/
+#  ../../desktop.ini
+#  ../../../Oracle/
+#  ../../../Saved Games/
+#  ../../../Searches/
+#  ../../../Videos/
+#  ../../../WPS Cloud Files/
+#  ../../../battery-report.html
+#  ../../../cpp.cpp
+#  ../../../helloworld.java
+#  ../../../man.txt
+#  ../../../myfile.txt
+#  ../../../node_modules/
+#  ../../../npm-cache/
+#  ../../../ntuser.dat.LOG1
+#  ../../../ntuser.dat.LOG2
+#  ../../../ntuser.ini
+#  ../../../package-lock.json
+#  ../../../package.json
+#  ../../../practice (Unshared).sql
+#  ../../../practice.sql
+#  ../../../practice~1.sql
+#  ../../../stringconcat.txt
+#  ../../../task12it-Gowtham2029/
