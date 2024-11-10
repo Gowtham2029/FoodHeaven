@@ -5,7 +5,7 @@ import ShimmerMenu from './ShimmerMenu';
 import useRestaurantMenu from '../util/useRestaurantMenu';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../util/cartSlice';
-import Shimmer from "./Shimmer"
+
 
 const RestaurantMenu = () => {
 
@@ -13,11 +13,10 @@ const RestaurantMenu = () => {
   const {id} = Params;
   // console.log(Params);
 
-  // const [restaurant, setRestaurant] = useState(null);
   const restaurant = useRestaurantMenu(id);
   const [menu, setMenu] = useState(null);
   const dispatch = useDispatch();
-  
+
   
   useEffect(() =>{
     getRestaurantsinfo();
@@ -27,8 +26,9 @@ const RestaurantMenu = () => {
 
     const data = await fetch(`https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=16.501976&lng=80.639227&restaurantId=${id}&catalog_qa=undefined&submitAction=ENTER`);
     const json = await data.json();
-    setMenu(json.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card.itemCards);
-    // console.log(json.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card.itemCards);
+    
+    // console.log(json.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR)
+    setMenu(json.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.itemCards)
 
   }
 
@@ -55,15 +55,15 @@ const RestaurantMenu = () => {
     </div>
     <div>
         <h1 style={{backgroundColor:"green",color:"yellow",textAlign:"center",borderRadius:"1rem"}}>Menu</h1>
-        
-        {/* <ul>{Object.values(menu.itemCards).map((item)=>{
-        <li key={item.price}>{item.name}</li>
-        }
-        )}
-        </ul> */}
+       
         <ul>{(!menu)?<ShimmerMenu/>: menu?.map((item) => {
-            // console.log(item)
-            return (<li key={item.card.info.id}><h2 className='menu-names'>{item.card.info.name}- <button style={{padding:"2px 5px"}} onClick={() => addFoodItem(item)}>Add</button></h2></li>)
+            return (<li style={{display:"flex"}} key={item.card.info.id}>
+              <img className="menu-imgs" src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${item.card.info.imageId}`}></img>
+              
+              <h2 className='menu-names'>{item.card.info.name}- <button style={{padding:"2px 5px"}} onClick={() => addFoodItem(item)}>Add</button></h2></li>
+               
+            )
+             
         })}</ul>
         
         

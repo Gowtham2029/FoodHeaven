@@ -33,7 +33,7 @@ const Multislider = () => {
     async function imgSlider() {
         let data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=30.29844139999999&lng=77.99313599999999&page_type=DESKTOP_WEB_LISTING");
         let json = await data.json();
-        console.log(json.data);
+        // console.log(json.data);
         setSlider(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
     }
     return (
@@ -52,8 +52,8 @@ const Multislider = () => {
        {(!slider)? <SliderShimmer /> : slider?.map((slice) => {
          let image = slice.info.cloudinaryImageId;
          return (
-            <div >
-             <Link className="slider" to={"/restaurant/"+slice.info.id} key={slice.info.id} >
+            <div key={slice.info.id}>
+             <Link className="slider" to={"/restaurant/"+slice.info.id}  >
               <img src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${image}`} alt="slider" />
              </Link> 
             </div>

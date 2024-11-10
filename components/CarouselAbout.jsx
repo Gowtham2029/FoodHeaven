@@ -62,7 +62,7 @@ return (
      
      <div style={{display:"flex", justifyContent:"space-evenly"}}>
       <img src={Carousel[index].img} style={{height:"20rem", width:"22rem", borderRadius:"1rem", boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}} alt="images" />
-      <h3 style={{margin:"2rem", width:"50%", lineHeight:"1.5rem"}}><h2>{Carousel[index].heading}:</h2><br />{Carousel[index].desc}</h3>
+      <h2 style={{margin:"2rem", width:"50%", lineHeight:"1.5rem"}}><h3>{Carousel[index].heading}:</h3><br />{Carousel[index].desc}</h2>
 
      </div>
      <div style={{display:"flex", justifyContent:"center", marginTop:"3rem"}}>

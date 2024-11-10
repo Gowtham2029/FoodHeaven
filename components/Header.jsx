@@ -2,8 +2,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import userContext from "../util/userContext";
-import { useSelector } from "react-redux";
-import store from "../util/store";
+import Store from "../util/Store";
+import {useSelector } from "react-redux";
+
 
 const styleObj = {
   color: "green",
@@ -27,10 +28,10 @@ const Header = () => {
 
   const { user } = useContext(userContext);
 
-  const cartItems = useSelector((store) => store.cart.items);
+   const cartItems = useSelector((Store) => Store.cart.items);
 
   return (
-    <div className="header" style={{backgroundColor:" rgb(225, 229, 226)"}}>
+    <div className="header" style={{ backgroundColor: " rgb(225, 229, 226)" }}>
       <Title />
 
       <div className="nav-items">
@@ -72,13 +73,13 @@ const Header = () => {
             </Link>
           </li>
 
-          <li>
+          {/* <li>
             {isLoggedIn ? (
               <button onClick={() => setIsLoggedIn(false)} style={{padding:"0.3rem"}}>{user.name} </button>
             ) : (
               <button onClick={() => setIsLoggedIn(true)} style={{padding:"0.3rem"}}>Login</button>
             )}
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

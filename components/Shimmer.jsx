@@ -1,13 +1,13 @@
 import { useId } from "react";
 
 const Shimmer = () => {
-  const id = useId();
+
   return (
     <div className="Restaurant-list">
       {Array(20)
         .fill("")
-        .map((e) => (
-          <div className="shimmer-card" key={id}></div>
+        .map((e, idx) => (
+          <div className="shimmer-card" key={idx}></div>
         ))}
     </div>
   );

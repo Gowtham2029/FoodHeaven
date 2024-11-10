@@ -1,5 +1,3 @@
-import { async } from "regenerator-runtime";
-import { RestaurantList } from "../Contents.js";
 import RestaurantCard from "./RestaurantCard.jsx";
 import {useState, useEffect} from "react";
 import Shimmer from "./Shimmer.jsx";

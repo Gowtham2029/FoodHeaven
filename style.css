@@ -126,6 +126,10 @@ html{
     border-radius: 1rem;
 }
 
+button{
+    cursor: pointer;
+}
+
 .search-container > button{
     margin:0.5rem;
     height:2rem;
@@ -150,8 +154,17 @@ html{
     /* justify-content: space-evenly; */
 }
 
+
+.menu-imgs{
+    
+    margin: 1rem 1rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+}
+
 .menu-names{
-    margin:1rem;
+    margin-top:2rem;
 }
 
 .Linktag{

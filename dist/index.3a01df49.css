@@ -1,0 +1,428 @@
+html {
+  font-family: "poppins" sans-serif;
+  background-color: #f8fdf9;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #e1e5e2;
+  justify-content: space-between;
+  width: auto;
+  margin: 2px;
+  display: flex;
+}
+
+.nav-items > ul {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: .7rem;
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-items > ul > li {
+  margin: 1.2rem 1rem;
+}
+
+.title {
+  justify-content: space-between;
+  text-decoration: none;
+  display: flex;
+}
+
+#img {
+  align-content: center;
+  height: 5.5rem;
+}
+
+.cards {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.card {
+  background-color: #e1e5e2;
+  border-radius: .5rem;
+  width: 15rem;
+  height: 23.5rem;
+  margin: 1.5rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.card > img {
+  border-radius: .5rem;
+  width: 13rem;
+  height: 10rem;
+}
+
+.multislider {
+  opacity: 1;
+  background-color: #e1e5e2;
+  border-radius: 1rem;
+  height: 30%;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.slider {
+  margin: 0 20px;
+  padding: 2rem 0;
+}
+
+.slider > img {
+  border-radius: 10px;
+  width: 90%;
+  height: 15rem;
+}
+
+.react-multi-carousel-list {
+  padding: 0 0 3rem;
+}
+
+.Restaurant-list {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.search-container {
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  display: flex;
+}
+
+.search-container > input {
+  border-radius: 1rem;
+  width: 30%;
+  height: 2rem;
+  padding: .3rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.search-container > button {
+  color: #fff;
+  background-color: #039f03;
+  width: 5rem;
+  height: 2rem;
+  margin: .5rem;
+  padding: .3rem;
+}
+
+.RestaurantLogo {
+  border: 2px solid gray;
+  border-radius: 1rem;
+  width: 17rem;
+  height: 20rem;
+}
+
+.menu {
+  gap: 12rem;
+  margin: 2rem 5rem;
+  display: flex;
+}
+
+.menu-imgs {
+  border-radius: 1rem;
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem;
+}
+
+.menu-names {
+  margin-top: 2rem;
+}
+
+.Linktag {
+  color: #000;
+  text-decoration: none;
+}
+
+.shimmer-card {
+  background-color: #8b8989;
+  width: 200px;
+  height: 250px;
+  margin: 15px;
+  padding: 5px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.box-1 {
+  justify-content: space-around;
+  margin: 3rem;
+  display: flex;
+}
+
+.cartItems > .box-2 > img {
+  border-radius: 1rem;
+  width: 15rem;
+  height: 12rem;
+}
+
+.cartItems > .box-3 {
+  margin-left: 3rem;
+}
+
+.cartItems {
+  width: 70vw;
+  height: 50vh;
+  margin: 0 3rem;
+  display: flex;
+}
+
+.btns {
+  gap: 1rem;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.footer {
+  flex-direction: column;
+  min-height: 85vh;
+  display: flex;
+}
+
+.legal {
+  color: #fff;
+  background-color: #000;
+  border-radius: 1rem 1rem 0 0;
+  justify-content: space-around;
+  margin-top: auto;
+  padding-top: 2rem;
+  display: flex;
+}
+
+.legal > div > ul > li {
+  color: #b9b6b6;
+  padding: 1rem 0;
+  list-style-type: none;
+}
+
+.legal > div > ul > li > a {
+  color: #b9b6b6;
+  text-decoration: none;
+}
+
+.spanning {
+  background-color: #cccaca;
+  border-radius: 50%;
+  margin: 1rem .3rem;
+}
+
+form {
+  transition: all 1s;
+}
+
+form:hover {
+  background-color: #e1e5e2;
+  box-shadow: 0 4px 8px;
+}
+
+.instamart {
+  justify-content: space-evenly;
+  margin: 4rem 4rem 8rem;
+  display: flex;
+}
+
+.instamart > img {
+  border-radius: 1rem;
+  width: 40%;
+  height: 80%;
+}
+
+.sides {
+  width: 20rem;
+  height: 20rem;
+  margin-top: 1rem;
+  overflow-y: scroll;
+}
+
+.side {
+  margin: 1rem 0;
+}
+
+.side > h3 {
+  text-align: center;
+  background-color: #f1f5f2;
+  border-radius: 1rem;
+  width: 15rem;
+  margin-top: .3rem;
+  padding: 1rem .5rem;
+  font-weight: 100;
+  line-height: 1.5rem;
+}
+
+.side > h3 > ul > li {
+  list-style-type: none;
+}
+
+.sections {
+  width: 50%;
+  margin: auto;
+}
+
+.shimmer_menu {
+  background-color: #8b8989;
+  width: 20rem;
+  height: 2rem;
+  margin: 2rem;
+}
+
+@font-face {
+  font-family: revicons;
+  fallback: fallback;
+  src: url("revicons.1e5a68b2.woff") format("woff"), url("revicons.05a1e4f3.ttf") format("ttf"), url("revicons.010a9e7b.eot") format("ttf");
+}
+
+.react-multi-carousel-list {
+  align-items: center;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.react-multi-carousel-track {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform, transition;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  position: relative;
+}
+
+.react-multiple-carousel__arrow {
+  z-index: 1000;
+  opacity: 1;
+  cursor: pointer;
+  background: #00000080;
+  border: 0;
+  border-radius: 35px;
+  outline: 0;
+  min-width: 43px;
+  min-height: 43px;
+  transition: all .5s;
+  position: absolute;
+}
+
+.react-multiple-carousel__arrow:hover {
+  background: #000c;
+}
+
+.react-multiple-carousel__arrow:before {
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+  font-family: revicons;
+  font-size: 20px;
+  display: block;
+  position: relative;
+}
+
+.react-multiple-carousel__arrow:disabled {
+  cursor: default;
+  background: #00000080;
+}
+
+.react-multiple-carousel__arrow--left {
+  left: calc(4% + 1px);
+}
+
+.react-multiple-carousel__arrow--left:before {
+  content: "";
+}
+
+.react-multiple-carousel__arrow--right {
+  right: calc(4% + 1px);
+}
+
+.react-multiple-carousel__arrow--right:before {
+  content: "";
+}
+
+.react-multi-carousel-dot-list {
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.react-multi-carousel-dot button {
+  opacity: 1;
+  box-shadow: none;
+  cursor: pointer;
+  border: 2px solid gray;
+  border-radius: 50%;
+  outline: 0;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px 0 0;
+  padding: 0;
+  transition: background .5s;
+  display: inline-block;
+}
+
+.react-multi-carousel-dot button:hover:active, .react-multi-carousel-dot--active button {
+  background: #080808;
+}
+
+.react-multi-carousel-item {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .react-multi-carousel-item {
+    flex-shrink: 0 !important;
+  }
+
+  .react-multi-carousel-track {
+    overflow: visible !important;
+  }
+}
+
+[dir="rtl"].react-multi-carousel-list {
+  direction: rtl;
+}
+
+.rtl.react-multiple-carousel__arrow--right {
+  left: calc(4% + 1px);
+  right: auto;
+}
+
+.rtl.react-multiple-carousel__arrow--right:before {
+  content: "";
+}
+
+.rtl.react-multiple-carousel__arrow--left {
+  left: auto;
+  right: calc(4% + 1px);
+}
+
+.rtl.react-multiple-carousel__arrow--left:before {
+  content: "";
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */

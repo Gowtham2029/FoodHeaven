@@ -1,14 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import store from "../util/store";
 import { clearCart, removeItem } from "../util/cartSlice";
-import { useId } from "react";
+import Store from "../util/Store";
 
 
 const cart = () => {
 
-    const id = useId();
-    const cartItems = useSelector(store => store.cart.items)
+    const [passingId, setPassingId] = useState(0);
+    
+    const cartItems = useSelector(Store => Store.cart.items)
 
     const dispatch = useDispatch();
 
@@ -17,10 +17,12 @@ const cart = () => {
     }
 
     const handleRemoveItem = (item) => {
-      dispatch(removeItem(item))
+      // console.log(item.card.info.id);
+      dispatch(removeItem(item.card.info.id));
     }
-    
+   
   return (
+    
     <div>
       <div className="box-1">
       <h1 style={{borderBottom:"0.3rem solid grey"}}>cart items-{cartItems.length}</h1> 
@@ -28,19 +30,26 @@ const cart = () => {
       </div>
     
       <h2>{cartItems.map(items => {
-       
         return (
           
-        <div className="cartItems" key={id}>
+        <div className="cartItems" key={items.card.info.id}>
         <div className="box-2"><img src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${items.card.info.imageId}`}></img>
         </div>
         <div className="box-3">
           
         <h4>{items.card.info.name}</h4>
-        <h4>price: {(Number.parseInt(items.card.info.price))/10}/-</h4>
-        <h1>{console.log((items.card.info.defaultPrice))}</h1>
+        {console.log(items.card.info)}
+        <h4>price: {(items.card.info.defaultPrice && (Number.parseInt(items.card?.info?.defaultPrice))/10) || (items.card.info.price && (Number.parseInt(items.card?.info?.price))/10)}/-</h4>
+
+        
         <p style={{fontWeight:"2px"}}>{items.card.info.description}</p>
-        <div className="btns"><button onClick={() => handleRemoveItem(items)} style={{padding:"0.3rem"}} >Remove item</button>
+        <div className="btns">
+          <button 
+          onClick={() => {
+          handleRemoveItem(items)}} 
+      
+          style={{padding:"0.3rem"}} 
+          >Remove item</button>
         <br /><button style={{backgroundColor:"green", color:"yellow", padding:"0.3rem"}}>Buy Now</button></div>
         </div>
         

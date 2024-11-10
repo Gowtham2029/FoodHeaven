@@ -39,7 +39,7 @@ const Footer = () => {
        
       </div>
       <h2 style={{backgroundColor:"black",color:"white", textAlign:"center"}}>
-      <div class="legal" style={{color:"white",paddingBottom:"3rem",display:"flex",alignItems:"last baseline",justifyContent:"center",fontSize:"1.5rem"}}> Developed By {user.name} | <span>&copy;</span> All Rights Reserved 😁 2023</div>
+      <div className="legal" style={{color:"white",paddingBottom:"3rem",display:"flex",alignItems:"last baseline",justifyContent:"center",fontSize:"1.5rem"}}> Developed By {user.name} | <span>&copy;</span> All Rights Reserved 😁 2023</div>
 
       </h2>
       

@@ -1,7 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
-
-
-
+import { createSlice, current } from "@reduxjs/toolkit";
 
 
 const cartSlice = createSlice({
@@ -14,17 +11,12 @@ const cartSlice = createSlice({
     
     reducers: {
         addItem: (state, action) =>{
-            //  console.log(state);
-            state.items.push(action.payload);
-           
+           state.items.push(action.payload);
         },
-
+        // <h1>{items.card.info.id}</h1>
         removeItem: (state, action) => {
-
-            // const index = cartSlice.items.indexOf(action.payload);
-           
-            state.items.splice(action.payload, 1);
-            
+        //   console.log(current(state.items[0]))
+           state.items.splice(state.items.findIndex((item) => item.card.info.id === action.payload), 1);
         },
 
         clearCart : (state) => {
